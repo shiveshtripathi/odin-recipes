@@ -1,8 +1,57 @@
 body {
   font-family: 'Times New Roman', Times, serif;
+  margin: 0;
 }
 
 .main-heading {
   text-align: center;
   font-size: 50px;
+  border-style: none none ridge none;
+  margin-top: 5px;
+}
+
+.recipe-card {
+  background: #fff;
+  max-width: 960px;
+  padding: 20px;
+  margin: 0 auto;
+  /* border: solid salmon; */
+  align-content: center;
+}
+
+/* .classic-macroni-salad {
+  border: solid blue;
+}
+
+.spicy-grilled-stuffed-chicken-breast-sandwich {
+  border: solid blueviolet;
+}
+.zesty-chicken-meatloaf {
+  border: solid rgb(114, 250, 116);
+} */
+
+.recipe-card::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.card img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.card h2 {
+  color: #999;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 100%;
+}
+
+.card {
+  float: left;
+  /* background: #eee; */
+  width: 28%;
+  margin: 1%;
+  padding: 1%;
 }
